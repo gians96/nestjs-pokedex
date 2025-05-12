@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db_mongo_pokedex:
+    image: mongo:7
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      - MONGODB_DATABASE=pokedex
+      # - MONGODB_USER=root
+      # - MONGODB_PASSWORD=root
+    volumes:
+      - ./mongodb:/data/db ## mounting the ./mongodb folder of project to /data/db of the container, para hacer persistente la data
