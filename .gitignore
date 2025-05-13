@@ -2,7 +2,8 @@
 /dist
 /node_modules
 /build
-
+/mongodb
+/mongodb_data
 # Logs
 logs
 *.log
